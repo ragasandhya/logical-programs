@@ -1,12 +1,12 @@
 puts "enter a number"
-count = gets.to_i
+no_of_divisibles = 0
 n = gets.to_i
 for i in 1..n
 	if(n % i==0)
-		count= count + 1
+		no_of_divisibles = no_of_divisibles + 1
 	end
 end
-if(count <= 2)
+if(no_of_divisibles <= 2)
 	puts "prime number"
 else
 	puts "not a prime number"
